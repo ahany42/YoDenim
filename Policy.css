@@ -1,0 +1,143 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #598BAF;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 200px;
+}
+h2{
+    justify-content:center;
+}
+/*menu button*/
+.btn {
+    /* width: 150px;
+    height: 50px; */
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5vw;
+    padding: 1vh 2vh;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: #598BAF;
+    text-decoration-line: none;
+}
+.btn > i{
+    color: white;
+}
+
+    .btn:hover {
+        box-shadow: 0 0 20px 0px #2e2e2e3a;
+    }
+
+    .btn > .icon {
+        position: absolute;
+        height: 2em;
+        width: 4em;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+
+/* .btn > div {
+    transform: translateX(3em);
+} */
+
+.btn:hover .icon {
+    width: 3em;
+}
+
+.btn > div {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 2vw;
+}
+
+    .btn > div:hover {
+        transition: all 0.5s;
+        
+    }
+    
+    
+
+    .btn :hover .icon {
+        width: 3em;
+    }
+
+   
+
+    .btn:active .icon {
+        transform: scale(0.85);
+       
+    }
+.policyheader {
+    text-decoration: none;
+    color: #fff;
+    text-transform: unset;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+  
+
+.policy h3 {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top:10px;
+    
+   
+}
+.title{
+    padding-top:5em;
+    padding-left:4em;
+    font-size:1.5em;
+    font-weight:500;
+    color:#1a4d72;
+}
+.content {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+}
+.main {
+    padding-bottom: 5em;
+}
+/* Small screen */
+@media (min-width:768px) and (max-width:991px){
+    header{
+        padding: 1vh 6vw;
+    }
+    .btn,.policyheader{
+        font-size: 5vw;
+    }
+    /* .btn{
+        padding: 1vh 2vh;
+    } */
+    .title{
+        padding-top: 20vw;
+    }
+}
